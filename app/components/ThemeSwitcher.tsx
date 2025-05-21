@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useTheme } from '@/app/contexts/ThemeContext';
 
 // Simple icons for demonstration
