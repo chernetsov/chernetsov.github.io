@@ -69,7 +69,12 @@ export default function Home() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2">Experience</h2>
+        <div className="flex justify-between items-center border-b border-gray-300 dark:border-gray-700 pb-2">
+          <h2 className="text-2xl font-semibold">Experience</h2>
+          <a href="/cv" className="text-2xl text-blue-600 hover:underline dark:text-blue-400">
+            📜 CV
+          </a>
+        </div>
         <div className="space-y-4">
           {experienceItems.slice(0, initialVisibleCount).map((item, index) => (
             <div className="flex" key={index}>

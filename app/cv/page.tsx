@@ -3,7 +3,7 @@ export default function CVPage() {
     <div className="container mx-auto px-4 py-8">
       <header className="mb-8 text-center">
         <h1 className="text-4xl font-bold">Misha (Mikhail) Chernetsov</h1>
-        <p className="text-lg text-gray-600">chernetsov@gmail.com, 2064848910, Austin, TX</p>
+        <p className="text-lg text-gray-600">chernetsov@gmail.com &bull; 2064848910 &bull; Austin, TX</p>
         <a 
           href="/Misha Chernetsov, CV.pdf" 
           download 
