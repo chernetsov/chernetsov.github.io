@@ -47,7 +47,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
       description: data.description,
       content,
     }
-  } catch (error) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  } catch (_error) { 
     return null
   }
-} 
+}

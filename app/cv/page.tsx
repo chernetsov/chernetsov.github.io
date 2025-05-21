@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function CVPage() {
   return (
     <div className="space-y-10">
@@ -36,7 +38,7 @@ export default function CVPage() {
 
       {/* You can reuse the Experience and Publications sections from the homepage or customize them */}
       <p className="text-gray-800 dark:text-gray-200">
-        For Experience and Publications, please refer to the <a href="/" className="text-blue-600 dark:text-blue-400 hover:underline">homepage</a>.
+        For Experience and Publications, please refer to the <Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">homepage</Link>.
       </p>
     </div>
   )
