@@ -6,7 +6,7 @@ on:
       - main # Or your default branch
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write # Allows the action to push to the gh-pages branch
@@ -20,12 +20,17 @@ jobs:
           node-version: '20' # Specify your Node.js version
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci # Use npm ci for cleaner installs in CI
 
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-      - name: Deploy to gh-pages
-        run: npm run deploy 
+      - name: Build application
+        run: npm run build # This will generate the 'out' directory
+
+      - name: Create .nojekyll file
+        run: touch out/.nojekyll # Ensures GitHub Pages doesn't run Jekyll
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages
