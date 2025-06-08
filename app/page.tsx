@@ -51,9 +51,18 @@ export default function Home() {
 
   return (
     <div className="space-y-10 mb-50">
-      <header className="space-y-2">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Misha Chernetsov</h1>
-        <p className="text-lg text-gray-700 dark:text-gray-300"><a href="mailto:chernetsov@gmail.com" className="hover:underline">chernetsov@gmail.com</a></p>
+      <header className="flex items-center gap-6">
+        <div className="flex-shrink-0">
+          <img 
+            src="/profile-circular.png" 
+            alt="Misha Chernetsov" 
+            className="w-24 h-24 rounded-full border-2 border-gray-200 dark:border-gray-700 shadow-lg"
+          />
+        </div>
+        <div className="space-y-2">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Misha Chernetsov</h1>
+          <p className="text-lg text-gray-700 dark:text-gray-300"><a href="mailto:chernetsov@gmail.com" className="hover:underline">chernetsov@gmail.com</a></p>
+        </div>
       </header>
 
       <section className="space-y-4">
