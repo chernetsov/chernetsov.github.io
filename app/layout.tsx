@@ -20,6 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script defer src="https://cloud.umami.is/script.js" data-website-id="4b8195ad-8e01-4b8c-87c5-852a7ebd4ec6"></script>
       </head>
       <body className={`${inter.className}`}>
