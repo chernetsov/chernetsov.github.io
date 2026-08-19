@@ -92,3 +92,78 @@ body {
 a {
   color: var(--link-color);
 }
+
+@media print {
+  @page {
+    size: Letter;
+    margin: 0.45in;
+  }
+
+  html,
+  html.dark,
+  body {
+    background: white !important;
+    color: #111827 !important;
+  }
+
+  body > div.max-w-3xl {
+    max-width: none;
+    padding: 0;
+  }
+
+  nav,
+  button[aria-label^="Switch to"] {
+    display: none !important;
+  }
+
+  .cv-page {
+    max-width: none;
+    padding: 0;
+    font-size: 9pt;
+  }
+
+  .cv-header {
+    margin-bottom: 0.2in;
+  }
+
+  .cv-header h1 {
+    font-size: 22pt;
+  }
+
+  .cv-download {
+    display: none;
+  }
+
+  .cv-page section {
+    margin-bottom: 0.15in;
+  }
+
+  .cv-page section > p {
+    font-size: 10pt;
+    line-height: 1.35;
+  }
+
+  .cv-page h2 {
+    margin-bottom: 0.1in;
+    padding-bottom: 0.04in;
+    font-size: 15pt;
+  }
+
+  .cv-page section > div {
+    break-inside: avoid;
+    margin-bottom: 0.1in;
+    border: 0 !important;
+    background: white !important;
+    padding: 0;
+    box-shadow: none !important;
+  }
+
+  .cv-page h3 {
+    font-size: 11pt;
+  }
+
+  .cv-page section > div p {
+    margin-top: 0.02in;
+    line-height: 1.25;
+  }
+}

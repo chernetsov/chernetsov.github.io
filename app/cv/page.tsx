@@ -1,13 +1,13 @@
 export default function CVPage() {
   return (
-    <div className="container mx-auto px-4 py-8 text-gray-900 dark:text-gray-100">
-      <header className="mb-8 text-center">
+    <div className="cv-page container mx-auto px-4 py-8 text-gray-900 dark:text-gray-100">
+      <header className="cv-header mb-8 text-center">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Misha (Mikhail) Chernetsov</h1>
         <p className="text-lg text-gray-600 dark:text-gray-400">chernetsov@gmail.com &bull; 2064848910 &bull; Austin, TX</p>
         <a 
           href="/Misha Chernetsov, CV.pdf" 
           download 
-          className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 !text-white font-bold py-1 px-3 rounded text-sm dark:bg-blue-600 dark:hover:bg-blue-700"
+          className="cv-download mt-4 inline-block bg-blue-500 hover:bg-blue-600 !text-white font-bold py-1 px-3 rounded text-sm dark:bg-blue-600 dark:hover:bg-blue-700"
         >
           Download PDF
         </a>
@@ -23,10 +23,16 @@ export default function CVPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white">Experience</h2>
 
-        <div className="mb-6 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Grammarly / Area Tech Lead</h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">September 2022 - Present, Austin, remote</p>
-          <p className="mt-1 text-gray-800 dark:text-gray-200">Now: building ubiquitous agentic AI for work and education.</p>
+        <div className="cv-entry mb-6 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Superhuman / Area Tech Lead</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">October 2025 - Present, Austin, remote</p>
+          <p className="mt-1 text-gray-800 dark:text-gray-200">Building ubiquitous agentic AI for work and education.</p>
+        </div>
+
+        <div className="cv-entry mb-6 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Grammarly / Area Tech Lead, Grammarly Platform</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">September 2022 - October 2025, Austin, remote</p>
+          <p className="mt-1 text-gray-800 dark:text-gray-200">Led Grammarly&apos;s platform organization before the company rebranded to Superhuman.</p>
         </div>
 
         <div className="mb-6 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
