@@ -141,6 +141,25 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="space-y-6">
+        <h2 className="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 text-gray-900 dark:text-white">Projects</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+              <a href="https://chernetsov.github.io/77-to-starbase/" className="hover:underline">🚀 77 to Starbase</a>
+            </h3>
+            <p className="text-sm text-gray-800 dark:text-gray-200">
+              A trip site for friends: Austin to Starbase down US-77 in a Cybertruck to watch a Starship launch. Three.js cinematic intro and launch sim with a webcast-style HUD.
+            </p>
+            <p className="text-sm text-gray-700 dark:text-gray-400">
+              <a href="https://chernetsov.github.io/77-to-starbase/" className="text-blue-600 hover:underline dark:text-blue-400">Site</a>
+              {' · '}
+              <a href="https://github.com/chernetsov/77-to-starbase" className="text-blue-600 hover:underline dark:text-blue-400">Source</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
     </div>
   )
 }
