@@ -157,6 +157,23 @@ export default function Home() {
               <a href="https://github.com/chernetsov/77-to-starbase" className="text-blue-600 hover:underline dark:text-blue-400">Source</a>
             </p>
           </div>
+          <div>
+            <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+              <a href="https://chernetsov.github.io/kids-trump-accounts/" className="hover:underline">🌱 A gift that grows</a>
+            </h3>
+            <p className="text-sm text-gray-800 dark:text-gray-200">
+              A bilingual (English/Russian) family page inviting friends and relatives to give Vera and Alisa contributions to their Trump Accounts instead of toys. Growth calculator, a landing page for each girl&apos;s birthday invites, and verified QR codes for every way to give.
+            </p>
+            <p className="text-sm text-gray-700 dark:text-gray-400">
+              <a href="https://chernetsov.github.io/kids-trump-accounts/" className="text-blue-600 hover:underline dark:text-blue-400">Site</a>
+              {' · '}
+              <a href="https://chernetsov.github.io/kids-trump-accounts/vera/" className="text-blue-600 hover:underline dark:text-blue-400">Vera&apos;s page</a>
+              {' · '}
+              <a href="https://chernetsov.github.io/kids-trump-accounts/alisa/" className="text-blue-600 hover:underline dark:text-blue-400">Alisa&apos;s page</a>
+              {' · '}
+              <a href="https://github.com/chernetsov/kids-trump-accounts" className="text-blue-600 hover:underline dark:text-blue-400">Source</a>
+            </p>
+          </div>
         </div>
       </section>
 
