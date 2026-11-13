@@ -271,7 +271,7 @@ def build():
     story.append(
         entry(
             "Netcracker / Software Engineer, System Performance",
-            "September 2007 - March 2011 (3 years 7 months), Moscow",
+            "June 2005 - May 2007 (2 years), Moscow",
             "Started part-time during college on a team tuning a large Java codebase "
             "and complex Oracle database deployments for performance and reliability.",
         )

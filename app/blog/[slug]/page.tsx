@@ -33,10 +33,10 @@ export default async function BlogPostPage({
   }
 
   return (
-    <article className="prose prose-lg max-w-none">
+    <article className="prose prose-lg dark:prose-invert max-w-none">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">{post.title}</h1>
-        <time className="text-gray-500">{post.date}</time>
+        <h1 className="text-3xl font-bold text-fg mb-2">{post.title}</h1>
+        <time className="text-faint">{post.date}</time>
       </header>
       <MDXRemote source={post.content} />
     </article>
